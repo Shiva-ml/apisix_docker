@@ -1,0 +1,645 @@
+{
+	"info": {
+		"_postman_id": "957fb13b-475f-4096-a067-fbe75197f326",
+		"name": "Integration POC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7544681"
+	},
+	"item": [
+		{
+			"name": "APIs",
+			"item": [
+				{
+					"name": "accounts-api",
+					"item": [
+						{
+							"name": "/accounts/:customerNumber/list",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Response status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{host}}:{{accountsport}}/api/v1/accounts/:customerNumber/list",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{accountsport}}",
+									"path": [
+										"api",
+										"v1",
+										"accounts",
+										":customerNumber",
+										"list"
+									],
+									"variable": [
+										{
+											"key": "customerNumber",
+											"value": "112233"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/accounts/:customerNumber/list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{host}}:{{accountsport}}/api/v1/accounts/:customerNumber/list",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{accountsport}}",
+											"path": [
+												"api",
+												"v1",
+												"accounts",
+												":customerNumber",
+												"list"
+											],
+											"variable": [
+												{
+													"key": "customerNumber",
+													"value": "496273"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Request-ID",
+											"value": "e1888cb0-1ffe-4a25-abd4-fd599e792ad2"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 May 2024 07:23:02 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"accountNumber\": 1444301800,\n        \"customerNumber\": 496273,\n        \"iban\": \"SA81888172803961542658\",\n        \"accountType\": \"current\",\n        \"accountCurrency\": \"USD\",\n        \"availableBalance\": 3102310,\n        \"currentBalance\": 3102310,\n        \"accountName\": \"Dilly Burtonwood\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/accounts/:accountNumber/summary",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{host}}:{{accountsport}}/api/v1/accounts/:accountNumber/summary",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{accountsport}}",
+									"path": [
+										"api",
+										"v1",
+										"accounts",
+										":accountNumber",
+										"summary"
+									],
+									"variable": [
+										{
+											"key": "accountNumber",
+											"value": "1758813000"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/accounts/:accountNumber/summary",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{host}}:{{accountsport}}/api/v1/accounts/:accountNumber/summary",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{accountsport}}",
+											"path": [
+												"api",
+												"v1",
+												"accounts",
+												":accountNumber",
+												"summary"
+											],
+											"variable": [
+												{
+													"key": "accountNumber",
+													"value": "1758813000"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Request-ID",
+											"value": "405e2547-0f60-421e-aa16-925fb9ae7ee2"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 May 2024 07:23:15 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"accountNumber\": 1758813000,\n        \"customerNumber\": 350445,\n        \"iban\": \"SA53373681697327244597\",\n        \"accountType\": \"savings\",\n        \"accountCurrency\": \"USD\",\n        \"availableBalance\": 3102310,\n        \"currentBalance\": 3102310,\n        \"accountName\": \"Selena Eake\"\n    },\n    {\n        \"accountNumber\": 1758813000,\n        \"customerNumber\": 350445,\n        \"iban\": \"SA53373681697327244597\",\n        \"accountType\": \"savings\",\n        \"accountCurrency\": \"USD\",\n        \"availableBalance\": 3102310,\n        \"currentBalance\": 3102310,\n        \"accountName\": \"Selena Eake\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/accounts/:customerNumber/balances",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{host}}:{{accountsport}}/api/v1/accounts/:customerNumber/balances",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{accountsport}}",
+									"path": [
+										"api",
+										"v1",
+										"accounts",
+										":customerNumber",
+										"balances"
+									],
+									"variable": [
+										{
+											"key": "customerNumber",
+											"value": "112234"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/accounts/:customerNumber/balances",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{host}}:{{accountsport}}/api/v1/accounts/:customerNumber/balances",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{accountsport}}",
+											"path": [
+												"api",
+												"v1",
+												"accounts",
+												":customerNumber",
+												"balances"
+											],
+											"variable": [
+												{
+													"key": "customerNumber",
+													"value": "112234"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Request-ID",
+											"value": "5f7571ed-1747-4671-8661-5017e1d21d0d"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 May 2024 07:23:25 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"totalAvailableBalance\": 24000\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/accounts/:accountNumber/transactionList",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{host}}:{{accountsport}}/api/v1/accounts/:accountNumber/transactionList",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{accountsport}}",
+									"path": [
+										"api",
+										"v1",
+										"accounts",
+										":accountNumber",
+										"transactionList"
+									],
+									"variable": [
+										{
+											"key": "accountNumber",
+											"value": "1790544494"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/accounts/:accountNumber/transactionList",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{host}}:{{accountsport}}/api/v1/accounts/:accountNumber/transactionList",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{accountsport}}",
+											"path": [
+												"api",
+												"v1",
+												"accounts",
+												":accountNumber",
+												"transactionList"
+											],
+											"variable": [
+												{
+													"key": "accountNumber",
+													"value": "1790544494"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Request-ID",
+											"value": "35d0731e-2c9f-401b-865d-1de41ecee26f"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 May 2024 07:23:33 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"accountNumber\": 1790544494,\n        \"transactionDate\": \"2024-02-01\",\n        \"transactionAmount\": 3482270,\n        \"transactionDescription\": \"Kids\",\n        \"transactionRefrence\": \"7d805cc1-67b3-4a15-a709-12df70c2d81e\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/accounts/:customerNumber/transactionSummary",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{host}}:{{accountsport}}/api/v1/accounts/:customerNumber/transactionSummary",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{accountsport}}",
+									"path": [
+										"api",
+										"v1",
+										"accounts",
+										":customerNumber",
+										"transactionSummary"
+									],
+									"variable": [
+										{
+											"key": "customerNumber",
+											"value": "4749319"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/accounts/:customerNumber/transactionSummary",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{host}}:{{accountsport}}/api/v1/accounts/:customerNumber/transactionSummary",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{accountsport}}",
+											"path": [
+												"api",
+												"v1",
+												"accounts",
+												":customerNumber",
+												"transactionSummary"
+											],
+											"variable": [
+												{
+													"key": "customerNumber",
+													"value": "4749319"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Request-ID",
+											"value": "46326f7d-d189-45e5-bfb4-0ebd9ec81ab4"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 May 2024 07:23:45 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"accountNumber\": 1780730031,\n        \"transactionDate\": \"2024-03-30\",\n        \"transactionAmount\": 3032690,\n        \"transactionDescription\": \"Baby\",\n        \"transactionRefrence\": \"f832e70c-8e9f-4f2b-8460-9c055f9044e8\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "payment-api",
+					"item": [
+						{
+							"name": "/payments/validation/:iban",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{host}}:{{paymentsport}}/api/v1/payments/validation/:IBAN",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{paymentsport}}",
+									"path": [
+										"api",
+										"v1",
+										"payments",
+										"validation",
+										":IBAN"
+									],
+									"variable": [
+										{
+											"key": "IBAN",
+											"value": "DE89370400440532013000"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/payments/exchangerate/list",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8006/api/v1/payments/exchangerate/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8006",
+									"path": [
+										"api",
+										"v1",
+										"payments",
+										"exchangerate",
+										"list"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/payments/exchangerate/list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8002/api/v1/payments/exchangerate/list",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8002",
+											"path": [
+												"api",
+												"v1",
+												"payments",
+												"exchangerate",
+												"list"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Request-ID",
+											"value": "17684673-9202-452e-ade1-afcd2659d1cc"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 May 2024 07:09:56 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"currency\": \"IDR\",\n        \"exchangeRate\": \"2,26\"\n    },\n    {\n        \"currency\": \"NOK\",\n        \"exchangeRate\": \"33,14\"\n    },\n    {\n        \"currency\": \"THB\",\n        \"exchangeRate\": \"9,80\"\n    },\n    {\n        \"currency\": \"EUR\",\n        \"exchangeRate\": \"389,63\"\n    },\n    {\n        \"currency\": \"NZD\",\n        \"exchangeRate\": \"216,96\"\n    },\n    {\n        \"currency\": \"GBP\",\n        \"exchangeRate\": \"452,40\"\n    },\n    {\n        \"currency\": \"CAD\",\n        \"exchangeRate\": \"263,61\"\n    },\n    {\n        \"currency\": \"SGD\",\n        \"exchangeRate\": \"267,36\"\n    },\n    {\n        \"currency\": \"MYR\",\n        \"exchangeRate\": \"76,40\"\n    },\n    {\n        \"currency\": \"ZAR\",\n        \"exchangeRate\": \"19,49\"\n    },\n    {\n        \"currency\": \"ILS\",\n        \"exchangeRate\": \"97,87\"\n    },\n    {\n        \"currency\": \"CHF\",\n        \"exchangeRate\": \"399,19\"\n    },\n    {\n        \"currency\": \"JPY\",\n        \"exchangeRate\": \"233,29\"\n    },\n    {\n        \"currency\": \"MXN\",\n        \"exchangeRate\": \"21,45\"\n    },\n    {\n        \"currency\": \"KRW\",\n        \"exchangeRate\": \"26,59\"\n    },\n    {\n        \"currency\": \"PHP\",\n        \"exchangeRate\": \"6,32\"\n    },\n    {\n        \"currency\": \"CZK\",\n        \"exchangeRate\": \"15,55\"\n    },\n    {\n        \"currency\": \"RUB\",\n        \"exchangeRate\": \"3,96\"\n    },\n    {\n        \"currency\": \"RON\",\n        \"exchangeRate\": \"78,29\"\n    },\n    {\n        \"currency\": \"UAH\",\n        \"exchangeRate\": \"9,21\"\n    },\n    {\n        \"currency\": \"ISK\",\n        \"exchangeRate\": \"2,59\"\n    },\n    {\n        \"currency\": \"AUD\",\n        \"exchangeRate\": \"238,10\"\n    },\n    {\n        \"currency\": \"HKD\",\n        \"exchangeRate\": \"46,38\"\n    },\n    {\n        \"currency\": \"BRL\",\n        \"exchangeRate\": \"71,46\"\n    },\n    {\n        \"currency\": \"SEK\",\n        \"exchangeRate\": \"33,21\"\n    },\n    {\n        \"currency\": \"BGN\",\n        \"exchangeRate\": \"199,21\"\n    },\n    {\n        \"currency\": \"CNY\",\n        \"exchangeRate\": \"50,18\"\n    },\n    {\n        \"currency\": \"TRY\",\n        \"exchangeRate\": \"11,24\"\n    },\n    {\n        \"currency\": \"INR\",\n        \"exchangeRate\": \"4,34\"\n    },\n    {\n        \"currency\": \"USD\",\n        \"exchangeRate\": \"362,62\"\n    },\n    {\n        \"currency\": \"RSD\",\n        \"exchangeRate\": \"3,33\"\n    },\n    {\n        \"currency\": \"PLN\",\n        \"exchangeRate\": \"90,19\"\n    },\n    {\n        \"currency\": \"DKK\",\n        \"exchangeRate\": \"52,23\"\n    }\n]"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.request.headers.add({",
+					"    key: \"x-request-id\",",
+					"    value: \"{{$guid}}\"",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "accountsport",
+			"value": "8001",
+			"type": "string"
+		},
+		{
+			"key": "paymentsport",
+			"value": "8006",
+			"type": "string"
+		},
+		{
+			"key": "host",
+			"value": "localhost",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,500 @@
+{
+	"info": {
+		"_postman_id": "1f4ac14c-aecd-4985-80fe-2c6d1aa3b6dd",
+		"name": "end-end solution",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36968234"
+	},
+	"item": [
+		{
+			"name": "mic check",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "shiv",
+						"username": "shiva"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "edd1c9f034335f136f87ad84b625c8f1"
+					},
+					{
+						"key": "key",
+						"value": "edd1c9f034335f136f87ad84b625c8f1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "shiva",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "shiva",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "http://127.0.0.1:9080/shiv"
+			},
+			"response": []
+		},
+		{
+			"name": "/anything",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJVSmR6VHV4WUdON3BiY1hWZEdRMUFKbDNzNUJLejQ2ejFxLTdJcmk2V1VvIn0.eyJleHAiOjE3MzE4NDk0NDUsImlhdCI6MTczMTg0OTE0NSwianRpIjoiMzEwNjdkZjItNzlkZi00ZGQyLThkNGEtMTcyZTczMWZmOTM0IiwiaXNzIjoiaHR0cDovLzE3Mi4zMS4yMjQuMTo4MDgwL3JlYWxtcy9hcGlzaXgiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNjYwOTJhNTEtMGM0Zi00ZDEyLWEwNDItODUzZDIxZmY3ZWU3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBpc2l4X3Njb3BlX3Rlc3QiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtYXBpc2l4Iiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfSwiYXBpc2l4X3Njb3BlX3Rlc3QiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX19LCJzY29wZSI6InByb2ZpbGUgZmluYW5jaWFsX2luZm8gZW1haWwiLCJjbGllbnRIb3N0IjoiMTcyLjE3LjAuMSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWFwaXNpeF9zY29wZV90ZXN0IiwiY2xpZW50QWRkcmVzcyI6IjE3Mi4xNy4wLjEiLCJjbGllbnRfaWQiOiJhcGlzaXhfc2NvcGVfdGVzdCJ9.dm29Va51mXktIj7-R5e43gaw16m4juAfqeO11J0P05sk8iruHcOsy2MXSjp-LWUcw9191Ouy_LWcuKzwRyGvd-m8b4PMkeWWpkMkN8Y62yfzRXG7Rtu5bs0MUg0Aku0hMOhOgBCQsgIOh6yBVt4mRMJTeqed_CMVxBtuG1p5yGEzF_WnGd0f6Ssgzr7NVGZA8aK_exsA1_88TRflzz8hmJg58fbnCcvKmTWJmZEYdwXLI2u0netM73cqnOijBgSkecQdWYBGLSf2i-KoYY8388BxzcrXfrWgJJwMYuE8-nCEW9wQLUdajc5s8bE3828_K2jiKxah_UV2rF4VwzPFrg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "http://127.0.0.1:9080/anything"
+			},
+			"response": []
+		},
+		{
+			"name": "something",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJVSmR6VHV4WUdON3BiY1hWZEdRMUFKbDNzNUJLejQ2ejFxLTdJcmk2V1VvIn0.eyJleHAiOjE3MzE4NDk0NDUsImlhdCI6MTczMTg0OTE0NSwianRpIjoiMzEwNjdkZjItNzlkZi00ZGQyLThkNGEtMTcyZTczMWZmOTM0IiwiaXNzIjoiaHR0cDovLzE3Mi4zMS4yMjQuMTo4MDgwL3JlYWxtcy9hcGlzaXgiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNjYwOTJhNTEtMGM0Zi00ZDEyLWEwNDItODUzZDIxZmY3ZWU3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBpc2l4X3Njb3BlX3Rlc3QiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtYXBpc2l4Iiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfSwiYXBpc2l4X3Njb3BlX3Rlc3QiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX19LCJzY29wZSI6InByb2ZpbGUgZmluYW5jaWFsX2luZm8gZW1haWwiLCJjbGllbnRIb3N0IjoiMTcyLjE3LjAuMSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWFwaXNpeF9zY29wZV90ZXN0IiwiY2xpZW50QWRkcmVzcyI6IjE3Mi4xNy4wLjEiLCJjbGllbnRfaWQiOiJhcGlzaXhfc2NvcGVfdGVzdCJ9.dm29Va51mXktIj7-R5e43gaw16m4juAfqeO11J0P05sk8iruHcOsy2MXSjp-LWUcw9191Ouy_LWcuKzwRyGvd-m8b4PMkeWWpkMkN8Y62yfzRXG7Rtu5bs0MUg0Aku0hMOhOgBCQsgIOh6yBVt4mRMJTeqed_CMVxBtuG1p5yGEzF_WnGd0f6Ssgzr7NVGZA8aK_exsA1_88TRflzz8hmJg58fbnCcvKmTWJmZEYdwXLI2u0netM73cqnOijBgSkecQdWYBGLSf2i-KoYY8388BxzcrXfrWgJJwMYuE8-nCEW9wQLUdajc5s8bE3828_K2jiKxah_UV2rF4VwzPFrg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "http://127.0.0.1:9080/something"
+			},
+			"response": []
+		},
+		{
+			"name": "keycloak wellknown",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "edd1c9f034335f136f87ad84b625c8f1"
+					}
+				],
+				"url": "http://localhost:8080/realms/apisix/.well-known/openid-configuration"
+			},
+			"response": []
+		},
+		{
+			"name": "keycloak authentication",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "apisix_scope_test",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "nN0nBjfJxRJ20rNKmzhZQ8EpAbMAHPo5",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "shiva",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://172.31.224.1:8080/realms/apisix/protocol/openid-connect/token"
+			},
+			"response": []
+		},
+		{
+			"name": "accounts_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "accounts_api_client",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "iFjnheN6DG2VGCN9QXtQj3kSlcvoYMPT",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "shiva",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "scope",
+							"value": "accounts_info_scope",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8080/realms/apisix/protocol/openid-connect/token"
+			},
+			"response": []
+		},
+		{
+			"name": "accounts_token Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5MzZoT1hDeFh1NERjWUdXbUFwM3JtdVNKVGFIM2tNNmQ1b1ZNSmxyUVJBIn0.eyJleHAiOjE3MzIwOTQ0NDAsImlhdCI6MTczMjA5NDE0MCwianRpIjoiNjdmYTY4YjktMDZjZC00MGFmLWI0Y2EtYTUzNWFiODQyMGZjIiwiaXNzIjoiaHR0cDovLzEyNy4wLjAuMTo4MDgwL3JlYWxtcy9hcGlzaXgiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZmEwY2IyMGMtY2E1YS00YjQyLTlhYzctZGJlOTY4MTE1Y2Y0IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYWNjb3VudHNfYXBpX2NsaWVudCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovLzEyNy4wLjAuMTo5MDgwIiwiaHR0cDovLzE3Mi4yMC4wLjEiLCIqIiwiaHR0cDovLzEyNy4wLjAuMTo5MDgwLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtYXBpc2l4Iiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnRzX2FwaV9jbGllbnQiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCBhY2NvdW50c19pbmZvX3Njb3BlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjIwLjAuMSIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1hY2NvdW50c19hcGlfY2xpZW50IiwiY2xpZW50QWRkcmVzcyI6IjE3Mi4yMC4wLjEiLCJjbGllbnRfaWQiOiJhY2NvdW50c19hcGlfY2xpZW50In0.oS3GpqPghwnz5B0WhkFZMDjfS-w69jGcnBvSVkfZU1NqOzo66Jm9dverwQ-8PtMvVkSc5zc-53AE0Jmleg5cbX2C8idwnTGpLKKZdizB8txl0p74ByW-cG6l5Q6ckMEBx_lZh6RqtzKiMRvIJupKOcgxJ21tsS6nv5kQIkRcFmeKPIt7QDrb43uo0s4TctS-SWHuKLi161ILm88iWZ8cd6YdepZ2kbfzaj5wPeAkYj6gMhn56kfyoTVoICS_xKyYl45Hm-0pIuS6odZ4I8YhmYfJYL31gdtNXoIPQSyQwfDWNCW607xPKCEpdSAgO5L1Cx0YSyU74UUQFu_LyjlCnw"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "accounts_api_client",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "9Yl2RVIUQDUoKRCSxWG45LO5qAZ2X3du",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "shiva",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "scope",
+							"value": "accounts_info_scope",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://172.31.224.1:8080/realms/apisix/protocol/openid-connect/token/introspect"
+			},
+			"response": []
+		},
+		{
+			"name": "accounts_token Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "accounts_api_client",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "9Yl2RVIUQDUoKRCSxWG45LO5qAZ2X3du",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "shiva",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "scope",
+							"value": "accounts_info_scope",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://172.31.224.1:8080/realms/apisix/protocol/openid-connect/token"
+			},
+			"response": []
+		},
+		{
+			"name": "payments_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "payments_api_client",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "8sRCInZGHUUlcC8OMtaxEFIGCJ2HdIw1",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "shiva",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "scope",
+							"value": "payments_info_scope",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://172.31.224.1:8080/realms/apisix/protocol/openid-connect/token"
+			},
+			"response": []
+		},
+		{
+			"name": "apisix keycloak authentication Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "apisix",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "KmIdDZgVUVE4IG8zHHLTFxY8X8Ut8Z5M",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "shiva",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:9080/api/token"
+			},
+			"response": []
+		},
+		{
+			"name": "account api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://172.31.224.1:8001/api/v1/accounts/496273/list"
+			},
+			"response": []
+		},
+		{
+			"name": "account gateway",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5MzZoT1hDeFh1NERjWUdXbUFwM3JtdVNKVGFIM2tNNmQ1b1ZNSmxyUVJBIn0.eyJleHAiOjE3MzIwMjEyMDksImlhdCI6MTczMjAyMDkwOSwianRpIjoiNzY1OTRmMWItZjNiMy00NTk0LTgwZTUtOWQ3MWIxODQ1MTNjIiwiaXNzIjoiaHR0cDovLzE3Mi4zMS4yMjQuMTo4MDgwL3JlYWxtcy9hcGlzaXgiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZmEwY2IyMGMtY2E1YS00YjQyLTlhYzctZGJlOTY4MTE1Y2Y0IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYWNjb3VudHNfYXBpX2NsaWVudCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtYXBpc2l4Iiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnRzX2FwaV9jbGllbnQiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCBhY2NvdW50c19pbmZvX3Njb3BlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjIwLjAuMSIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1hY2NvdW50c19hcGlfY2xpZW50IiwiY2xpZW50QWRkcmVzcyI6IjE3Mi4yMC4wLjEiLCJjbGllbnRfaWQiOiJhY2NvdW50c19hcGlfY2xpZW50In0.rXsVzzBqCt9fuugo7oV4naP7k8hTX-FkBIUuaZIWR8it54KP-12TVYSgXh57vjShzlqMM70OrcBV_6D1HqbEDtawtarNP0QmJCiZYQCtsq4ePwpLSsSkQGLhtooNqG1ihuynMLV-iF_KNXivNRymN47yMkSjrsTDNoZSs66qCQSlFnsGTOoHYanGUgQiT5jIB54vpmwHw3ySa7gh-wOAipSRVfIOaZCj5oawBAjH7AAPebfRtA89tIGsG8ZmXhIj33_b4oJEKYGFfjeI5LbfQx_Sm6OhcGyB1mZ8j-D2q2389FWdcfzopjZGlMNQGGwn8rK_dDwvni9fcK-f35_Myg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9080/accounts/api/v1/accounts/496273/list"
+			},
+			"response": []
+		},
+		{
+			"name": "payment gatway",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5MzZoT1hDeFh1NERjWUdXbUFwM3JtdVNKVGFIM2tNNmQ1b1ZNSmxyUVJBIn0.eyJleHAiOjE3MzIwMjEyMzgsImlhdCI6MTczMjAyMDkzOCwianRpIjoiMDdjNzIyZGQtY2VhNi00OTgxLWEzNTEtYzM3ZDU5Y2M3ZTk1IiwiaXNzIjoiaHR0cDovLzE3Mi4zMS4yMjQuMTo4MDgwL3JlYWxtcy9hcGlzaXgiLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiNDliMGM1YmItYmM2My00N2Q0LWFmZjgtZDM0ZTM4NGY4NDgxIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoicGF5bWVudHNfYXBpX2NsaWVudCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtYXBpc2l4Iiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsiY3JlYXRlLWNsaWVudCIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktY2xpZW50cyJdfSwicGF5bWVudHNfYXBpX2NsaWVudCI6eyJyb2xlcyI6WyJ1bWFfcHJvdGVjdGlvbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIHBheW1lbnRzX2luZm9fc2NvcGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudEhvc3QiOiIxNzIuMjAuMC4xIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LXBheW1lbnRzX2FwaV9jbGllbnQiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjIwLjAuMSIsImNsaWVudF9pZCI6InBheW1lbnRzX2FwaV9jbGllbnQifQ.DQ6K9C-fuC4hMoybfow195E6Wgj9CvAfgN-jpW3sGUB7cS_LSm-phhYGd4El4EM4YYei9Azmzw8LGQK-R9IvQGMhh_DXql9mLC_f3yclVRmTzvN0GnCSptAyThhSwFHEyHyHjr3pMv0Vy0i7osimPtqxONZoUGqhurL20dl8SThKejwOV1VEXQ0soj-wQfDaoEk3shBqYbjKrKkjdkeKoe-NczeZmDU5ZE18s0AiHeZzf-q6jkCDmxQFBjTWAtCOomaW3sU0iIRDPYOvFn-A7_mAl9S5aeBN-9myylAjL5XrN6nmyJi-AftUP8mwmQ0EySEuqPeJVDll-QecCrQlmg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9080/payments/api/v1/payments/validation/DE89370400440532013000"
+			},
+			"response": []
+		},
+		{
+			"name": "client registeration",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhYmRiODgzZi02ZDMzLTQ0NWItYThhMi03NTFhNGJjNDFhODIifQ.eyJleHAiOjE3MzIxNzQ5NzQsImlhdCI6MTczMjA4ODU3NCwianRpIjoiY2RkOTE2NmMtZTA3Yi00NWJlLTkzYjQtNGIwZWIzZWUzM2RmIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvcmVhbG1zL21hc3RlciIsInR5cCI6IkluaXRpYWxBY2Nlc3NUb2tlbiJ9.hfVPAWWZcZAONLNKlEhT6GqJA7Op2pV2fkjQkHyhdfns3y_Sx2xFWule8khIa4-FhldYdlhMDaPnGfSfPq6F3w"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"redirect_uris\": [\"https://example.com/callback\"],\r\n  \"token_endpoint_auth_method\": \"none\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/realms/master/clients-registrations/openid-connect"
+			},
+			"response": []
+		},
+		{
+			"name": "client registeration confidential",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhYmRiODgzZi02ZDMzLTQ0NWItYThhMi03NTFhNGJjNDFhODIifQ.eyJleHAiOjE3MzIxNzUzMzQsImlhdCI6MTczMjA4ODkzNCwianRpIjoiNDg2ZTI1MjgtNDNmNS00MWU0LTliYjEtYmZjN2RmMjQzYmZmIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvcmVhbG1zL21hc3RlciIsInR5cCI6IkluaXRpYWxBY2Nlc3NUb2tlbiJ9.6JeWm4fQ6kG20bEZC5QllpLaUmTqqZat3oHaN47gf-xYTwpOL-OQVYIh851Diw0oLoufnXKKMQ7I7HCxujQo1g"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"redirect_uris\": [\"https://example.com/callback\"],\r\n  \"token_endpoint_auth_method\": \"client_secret_basic\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/realms/master/clients-registrations/openid-connect"
+			},
+			"response": []
+		}
+	]
+}
